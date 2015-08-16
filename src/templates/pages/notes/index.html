@@ -1,0 +1,18 @@
+<div class="note-wrapper">
+  <div class="note-content">
+    <div class="notes-header">
+      <h1 title="Notes">Notes</h1>
+    </div>
+
+    <nw-category-select></nw-category-select>
+
+    <div class="note-wrapper">
+      <a class="card-notes" ng-repeat="note in notes">
+
+        <nw-card header="note.title" body="note.description"></nw-card>
+
+      </a>
+    </div>
+
+  </div>
+</div>
