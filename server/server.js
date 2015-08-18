@@ -14,5 +14,6 @@ app.use(require('cors')({
 
 app.use(require('./api/users.js'));
 app.use(require('./api/notes.js'));
+app.use(require('./api/categories.js'));
 
 module.exports = app;

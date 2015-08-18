@@ -1,5 +1,7 @@
-<div class="card" title="{{header}}">
-  <img ng-src='{{image}}' ng-if='image'>
-  <h2 class="h3">{{header}}</h2>
-  <p ng-bind-html="body" class="hidden"></p>
+<div class="card panel panel-default col-md-4" title="{{header}}">
+  <div class="panel-body">
+    <img ng-src='{{image}}' ng-if='image'>
+    <h2 class="h2">{{header}}</h2>
+    <p ng-bind-html="body" class="hidden"></p>
+  </div>
 </div>

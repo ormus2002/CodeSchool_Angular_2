@@ -12,7 +12,7 @@ angular.module("NoteWrangler")
         nwCategorySelectCtrl.setActiveCategory(scope.category);
       }
       scope.categoryActive = function() {
-        return nwCategorySelectCtrl.getActiveCategory() === scope.category.name;
+        return nwCategorySelectCtrl.getActiveCategory() === scope.category.id;
       }
     }
   };

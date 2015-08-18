@@ -17,7 +17,8 @@ angular.module("NoteWrangler")
       scope.body = $sce.trustAsHtml(markdown.toHTML(scope.body));
 
       element.on("click", function() {
-        element.find("p.ng-binding").toggleClass("hidden")
+        element.find("p.ng-binding").toggleClass("hidden");
+        element.find("h2").toggleClass("hidden");
       });
       console.log(element);
     }

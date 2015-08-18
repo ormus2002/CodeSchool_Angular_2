@@ -2,3 +2,7 @@
   display: none !important;
   visibility: hidden !important;
 }
+
+.sort-menu {
+  width: 30%;
+}

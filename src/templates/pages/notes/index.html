@@ -4,10 +4,14 @@
       <h1 title="Notes">Notes</h1>
     </div>
 
-    <nw-category-select></nw-category-select>
+    <nw-category-select active-category="activeCategory"></nw-category-select>
+
+    <label>Search</label>
+    <input ng-model="search.$" />
 
     <div class="note-wrapper">
-      <a class="card-notes" ng-repeat="note in notes">
+      <a class="card-notes" ng-repeat="note in notes | filter: {category: {id: activeCategory}}
+        | filter: search">
 
         <nw-card header="note.title" body="note.description"></nw-card>
 

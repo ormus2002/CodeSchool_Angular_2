@@ -5,13 +5,17 @@ angular.module("NoteWrangler")
     restrict: 'E',
     templateUrl: "templates/directives/nw-category-select.html",
 
+    scope: {
+      activeCategory: "="
+    },
+
     link: function(scope, element, attrs) {
       scope.categories = Category.query();
     },
 
     controller: function($scope) {
       this.setActiveCategory = function(category) {
-        $scope.activeCategory = category.name;
+        $scope.activeCategory = category.id;
       };
       this.getActiveCategory = function() {
         return $scope.activeCategory;

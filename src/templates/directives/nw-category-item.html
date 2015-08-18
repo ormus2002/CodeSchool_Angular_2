@@ -1,4 +1,5 @@
-<a class="sort-menu-item" ng-click="makeActive()" ng-class="{'active': categoryActive()}">
+<a class="list-group-item" ng-click="makeActive()" ng-class="{'active': categoryActive()}">
+  <span class="badge">{{categoryCount()}}</span>
   <i class="icon left {{category.icon}}"></i>
-  {{category.name}} {{categoryCount()}}
+  {{category.name}}
 </a>
